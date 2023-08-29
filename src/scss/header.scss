@@ -3,9 +3,8 @@
   position: sticky;
   top: 0;
   left: 0;
-  background: var(--white);
   z-index: 3;
-  transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+  transition: all 0.1s cubic-bezier(0.5, 0.02, 0.13, 0.5);
   @media (max-width: $tablet) {
     padding: 24px 0;
   }
@@ -13,6 +12,7 @@
   &._header-scroll {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     padding: 16px 0;
+    background: var(--white);
   }
 
   &__container {
