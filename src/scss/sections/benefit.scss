@@ -1,0 +1,127 @@
+.benefit {
+  padding: 80px 0 64px;
+  @media (max-width: $mobile) {
+    padding: 64px 0 64px;
+  }
+
+  &__container {
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    @media (max-width: $mobile) {
+      margin: 0 -20px;
+    }
+
+    &::after {
+      content: '';
+      background: #DCDBE1;
+      height: 100%;
+      left: 50%;
+      top: 0;
+      position: absolute;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__column {
+    padding: 64px 104px;
+    @media (max-width: $pc) {
+      padding: 64px;
+    }
+    @media (max-width: $tablet) {
+      padding: 40px;
+    }
+    @media (max-width: $mobile) {
+      padding: 40px 32px;
+    }
+    @media (max-width: $mobileSmall) {
+      padding: 40px 16px 40px 24px;
+    }
+
+    &:first-child {
+      border-radius: 40px 0px 0px 40px;
+      border-top: 5px solid #21B609;
+      border-bottom: 5px solid #21B609;
+      border-left: 5px solid #21B609;
+    }
+
+    &:last-child {
+      border-radius: 0px 40px 40px 0px;
+      border-top: 5px solid #FF6871;
+      border-right: 5px solid #FF6871;
+      border-bottom: 5px solid #FF6871;
+    }
+  }
+
+  &__logo {
+    height: 52px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    letter-spacing: -0.4px;
+    @media (max-width: $mobileSmall) {
+      font-size: 25px;
+      max-width: 127px;
+      height: 32px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__icon {
+    @media (max-width: $mobile) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__content {
+  }
+
+  &__title-item {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.08px;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__text-item {
+    font-size: 14px;
+    color: var(--dark-gray);
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: -0.07px;
+  }
+}
+
+.title {
+}

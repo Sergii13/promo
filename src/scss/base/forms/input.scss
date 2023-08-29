@@ -1,0 +1,103 @@
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input {
+  border-radius: 8px;
+  background: var(--white, #FFF);
+  width: 100%;
+  display: block;
+  padding: 0px 20px 0 48px;
+  font-weight: 600;
+  height: 56px;
+  outline: none;
+  transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+  color: var(--black);
+
+  &:hover {
+    box-shadow: 0px 0px 0px 1px #DCDBE1;
+    background: rgba(255, 255, 255, 0.90);
+  }
+
+  &._form-focus {
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.25);
+  }
+
+  &._form-error {
+    background: #FFE4E6;
+  }
+}
+
+.input[placeholder]:not([data-placeholder-nohiden]) {
+  &::placeholder {
+    transition: opacity 0.3s;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
+
+textarea.input {
+  resize: none;
+  padding: 0px 0px;
+}
+
+.input-item {
+  position: relative;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #4019AC;
+
+    ._form-error & {
+      color: #F6545E;;
+    }
+
+    svg {
+      fill: currentColor
+    }
+
+  }
+
+  &__label {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.08px;
+    position: absolute;
+    top: 16px;
+    left: 48px;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+
+    ._form-focus & {
+      color: var(--dark-gray, #5B5A5F);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 16px;
+      top: 6px;
+      letter-spacing: -0.065px;
+    }
+
+    ._form-fill & {
+      color: var(--dark-gray, #5B5A5F);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 16px;
+      top: 6px;
+      letter-spacing: -0.065px;
+    }
+  }
+}

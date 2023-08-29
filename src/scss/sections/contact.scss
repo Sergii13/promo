@@ -1,0 +1,139 @@
+.contact {
+  padding: 66px 0;
+  @media (max-width: $mobile) {
+    padding: 50px 0 40px;
+  }
+
+  &__container {
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @media (max-width: $mobile) {
+      margin: 0 -20px;
+      grid-template-columns: repeat(1, 1fr);
+      border-radius: 40px;
+      overflow: hidden;
+    }
+  }
+
+  &__info {
+    border-radius: 40px 0px 0px 40px;
+    background: var(--primary, #6F3CFF);
+    @media (max-width: $mobile) {
+      border-radius: 0px;
+    }
+  }
+
+  &__info-item {
+  }
+
+  &__form {
+    border-radius: 0px 40px 40px 0px;
+    border-left: 1px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%), #6F3CFF;
+    @media (max-width: $mobile) {
+      border-radius: 0px;
+    }
+  }
+}
+
+
+.item-contact {
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+  }
+
+  &__icon {
+    border-radius: 16px;
+    background: var(--white);
+    width: 64px;
+    height: 64px;
+    padding: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 120%;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 20px;
+    color: var(--secondary);
+    font-weight: 600;
+    line-height: 130%;
+    transition: all 0.3s cubic-bezier(0.5, 0.02, 0.13, 0.5);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__descr {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 145%;
+    letter-spacing: -0.07px;
+    color: var(--white);
+  }
+}
+
+.form {
+  padding: 40px;
+
+  &__title {
+    text-align: center;
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: -0.12px;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__items {
+    display: grid;
+    gap: 16px;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__btn-wrap {
+    text-align: center;
+  }
+
+  &__button {
+  }
+}
+
+
