@@ -84,6 +84,7 @@
   &__image {
     position: relative;
     z-index: 2;
+    @include animation();
     @media (max-width: 1170px) {
       margin-left: -100px;
       margin-right: -30px;
