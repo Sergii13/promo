@@ -9,3 +9,29 @@
     font-size: 32px;
   }
 }
+
+.decor {
+  position: absolute;
+  z-index: -1;
+  width: 546px;
+  height: 546px;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(210px);
+  pointer-events: none;
+
+  &--1 {
+    top: -120px;
+    left: 0;
+    transform: translateX(-70%);
+    background: var(--secondary, #FFD900);
+
+  }
+
+  &--2 {
+    right: 0;
+    bottom: -200px;
+    transform: translateX(50%);
+    background: var(--primary);
+  }
+}
