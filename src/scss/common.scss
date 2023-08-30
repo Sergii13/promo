@@ -33,5 +33,40 @@
     bottom: -200px;
     transform: translateX(50%);
     background: var(--primary);
+    @media (max-width: $mobile) {
+      bottom: 50px;
+
+    }
+  }
+
+  &--3 {;
+    left: 0;
+    top: -100px;
+    transform: translateX(-30%);
+    background: #21B609;
+    @media (max-width: $mobile) {
+      top: -400px;
+    }
+  }
+
+  &--4 {;
+    right: 0;
+    top: -100px;
+    transform: translateX(80%);
+    background: var(--secondary);
+    @media (max-width: $mobile) {
+      top: 0px;
+      transform: translate(70%, -250%);
+    }
+  }
+
+  &--5 {;
+    left: 0;
+    top: -100px;
+    transform: translateX(-70%);
+    background: var(--primary);
+    @media (max-width: $mobile) {
+      transform: translate(-70%, -300%);
+    }
   }
 }
