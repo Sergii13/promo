@@ -8,6 +8,7 @@
   }
 
   &__wrap {
+    overflow: hidden;
     display: flex;
     border-radius: 40px;
     background: var(--secondary);

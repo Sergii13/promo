@@ -3,6 +3,7 @@
   }
 
   &__wrap {
+    overflow: hidden;
     border-radius: 40px;
     background: linear-gradient(0deg, #21B609 0%, #21B609 100%), #6F3CFF;
     display: flex;

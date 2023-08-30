@@ -134,6 +134,10 @@
   &__container2 {
     max-width: 1004px;
     margin: 0 auto;
+    padding: 0 20px;
+    @media (max-width: $mobile) {
+      padding: 0 16px;
+    }
   }
 
   &__label {
@@ -150,7 +154,7 @@
 
   &__acc-mob {
     position: absolute;
-    top: 10px;
+    top: 7px;
     right: 0;
     @media (min-width: $mobile) {
       display: none;
@@ -316,6 +320,7 @@
     font-family: 'Inter';
     letter-spacing: -0.08px;
     border: none;
+    width: 100%;
     outline: none;
     background: transparent;
     max-width: 100%;
