@@ -44,6 +44,10 @@
   }
 
   &__title {
+    img {
+      max-width: 1em
+    }
+
     &:not(:last-child) {
       margin-bottom: 48px;
     }
@@ -140,6 +144,17 @@
   }
 
   &__icon {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    img {
+      max-height: 100%
+    }
+
     @media (max-width: $mobile) {
       margin-bottom: 16px;
     }

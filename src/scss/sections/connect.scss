@@ -8,6 +8,10 @@
   }
 
   &__title {
+    img {
+      max-width: 1em
+    }
+
     &:not(:last-child) {
       margin-bottom: 48px;
     }
@@ -104,11 +108,14 @@
 
   &__decor {
     position: absolute;
+
+    img {
+      max-width: 1em
+    }
   }
 
   &__decor--1 {
     font-size: 72px;
-    transform: scaleX(-1) rotate(18deg);
     left: percent(18, 432);
     bottom: percent(13, 432);
     @media (max-width: $tablet) {
@@ -125,7 +132,6 @@
 
   &__decor--2 {
     font-size: 40px;
-    transform: rotate(-15deg);
     top: percent(10, 432);
     right: percent(41, 432);
     @media (max-width: $tablet) {
@@ -145,7 +151,6 @@
     font-size: 40px;
     top: percent(65, 432);
     left: percent(45, 432);
-    transform: rotate(-89.092deg);
     @media (max-width: $tablet) {
       font-size: 32px;
     }
@@ -160,7 +165,6 @@
 
   &__decor--4 {
     font-size: 56px;
-    transform: rotate(0.468deg);
     top: percent(80, 432);
     right: percent(90, 432);
     @media (max-width: $tablet) {
@@ -177,7 +181,6 @@
 
   &__decor--5 {
     font-size: 64px;
-    transform: rotate(-13.627deg);
     bottom: percent(70, 432);
     right: percent(18, 432);
     @media (max-width: $tablet) {
@@ -194,7 +197,6 @@
 
   &__decor--6 {
     font-size: 72px;
-    transform: rotate(0.468deg);
     bottom: percent(52, 432);
     left: percent(28, 432);
     @media (max-width: $tablet) {
@@ -211,7 +213,6 @@
 
   &__decor--7 {
     font-size: 40px;
-    transform: rotate(-6.458deg);
     top: percent(5, 432);
     right: percent(162, 432);
     @media (max-width: $tablet) {
@@ -228,7 +229,6 @@
 
   &__decor--8 {
     font-size: 64px;
-    transform: rotate(13.291deg);
     bottom: percent(9, 432);
     right: percent(30, 432);
     @media (max-width: $tablet) {
@@ -246,7 +246,6 @@
 
   &__decor--9 {
     font-size: 56px;
-    transform: rotate(-18.59deg);
     left: percent(20, 432);
     bottom: percent(24, 432);
     @media (max-width: $tablet) {

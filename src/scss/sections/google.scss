@@ -9,6 +9,10 @@
   }
 
   &__title {
+    img {
+      max-width: 1em
+    }
+
     &:not(:last-child) {
       margin-bottom: 48px;
     }

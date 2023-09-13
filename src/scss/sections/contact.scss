@@ -8,6 +8,10 @@
   }
 
   &__title {
+    img {
+      max-width: 1em
+    }
+
     &:not(:last-child) {
       margin-bottom: 48px;
     }
@@ -70,6 +74,10 @@
     font-weight: 600;
     line-height: 120%;
 
+    img {
+      max-width: 1em
+    }
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
@@ -111,6 +119,10 @@
     font-weight: 700;
     line-height: 130%;
     letter-spacing: -0.12px;
+
+    img {
+      max-width: 1em
+    }
 
     &:not(:last-child) {
       margin-bottom: 38px;

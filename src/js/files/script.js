@@ -17,3 +17,13 @@ if (btnAll) {
     btnAll.closest(".benefit").classList.add("benefit--active");
   });
 }
+// window.addEventListener("scroll", (e) => {
+//   console.log(window.scrollY);
+//   const photoBlock = document.querySelector(".hero__right");
+//   if (photoBlock) {
+//     photoBlock.scrollTo({
+//       top: 0,
+//       behavior: "smooth",
+//     });
+//   }
+// });
